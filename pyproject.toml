@@ -7,7 +7,7 @@ authors = [
     { name = "ellainng", email = "299958882+ellainng@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = ["thoughtform @ git+https://github.com/wispsy/thoughtform.git@1217f8bf77eca5ac20c27d99cd694d58ec9039e7"]
+dependencies = ["thoughtform @ git+https://github.com/wispsy/thoughtform.git@e618ab5e41aee2f04f004e9df3c6a594112d2c8e"]
 
 [project.scripts]
 paracosm = "paracosm:main"
