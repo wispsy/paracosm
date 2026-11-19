@@ -1,13 +1,13 @@
 [project]
 name = "paracosm"
 version = "0.1.0"
-description = "Add your description here"
+description = "Deterministic worlds and optional environment minds."
 readme = "README.md"
 authors = [
     { name = "ellainng", email = "299958882+ellainng@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = ["thoughtform @ git+https://github.com/wispsy/thoughtform.git@1217f8bf77eca5ac20c27d99cd694d58ec9039e7"]
 
 [project.scripts]
 paracosm = "paracosm:main"
@@ -15,3 +15,10 @@ paracosm = "paracosm:main"
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
 build-backend = "uv_build"
+
+[project.urls]
+Source = "https://github.com/wispsy/paracosm"
+Project = "https://github.com/orgs/wispsy/projects/28"
+
+[tool.uv.build-backend]
+source-include = ["tests/**", "scripts/**", "IMPLEMENTATION_PLAN.md"]
