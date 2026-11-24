@@ -1,13 +1,15 @@
 [project]
 name = "paracosm"
-version = "0.1.0"
+version = "0.1.0a1"
 description = "Deterministic worlds and optional environment minds."
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE.md"]
 authors = [
     { name = "ellainng", email = "299958882+ellainng@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = ["thoughtform @ git+https://github.com/wispsy/thoughtform.git@e618ab5e41aee2f04f004e9df3c6a594112d2c8e"]
+dependencies = ["thoughtform==0.1.0a1"]
 
 [project.scripts]
 paracosm = "paracosm:main"
